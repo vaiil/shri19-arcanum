@@ -1,3 +1,18 @@
 .Footer {
   border-top: solid 1px var(--color_layout-separator);
+  color: var(--color_grey-300);
+
+  &-Inner {
+    height: 49px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-Text {
+    flex-grow: 1;
+  }
+
+  &-Version {
+    margin-right: var(--space_xl);
+  }
 }

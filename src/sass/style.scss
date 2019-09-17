@@ -1,6 +1,16 @@
 @import "base/theme";
-@import "base/frame/container";
 
+@import "base/frame/container";
+@import "base/frame/page";
+
+@import "base/pattern/dropdown";
+@import "base/pattern/one-line";
+
+@import "base/content/link";
+
+@import "content/common/logo";
+@import "content/common/breadcrumbs";
 
 @import "content/layout/header";
 @import "content/layout/footer";
+
