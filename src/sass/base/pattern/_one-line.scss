@@ -1,0 +1,19 @@
+.OneLine {
+  display: flex;
+
+  &-Item {
+    &_verticalPosition {
+      &_top {
+        align-self: flex-start;
+      }
+
+      &_center {
+        align-self: center;
+      }
+
+      &_bottom {
+        align-self: flex-end;
+      }
+    }
+  }
+}

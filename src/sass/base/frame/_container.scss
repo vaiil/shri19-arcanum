@@ -1,0 +1,24 @@
+.Container {
+  box-sizing: border-box;
+
+  padding-right: var(--container_hspace);
+  padding-left: var(--container_hspace);
+
+  &_type {
+    &_centered {
+      max-width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+      --container_hspace: var(--space_xl);
+
+      @media screen and (max-width: 767px) {
+        --container_hspace: var(--space_m);
+      }
+    }
+
+    &_fluid {
+      --container_hspace: var(--space_l);
+    }
+  }
+}
+
