@@ -39,9 +39,9 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|svg)/,
-        loader: 'file-loader',
+        loader: 'url-loader',
         options: {
-          name: 'images/[name].[hash].[ext]'
+          limit: 30000
         }
       }
     ]
