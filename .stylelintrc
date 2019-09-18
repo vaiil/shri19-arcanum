@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "no-empty-source": null,
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": true
+      }
+    ]
+  }
+}

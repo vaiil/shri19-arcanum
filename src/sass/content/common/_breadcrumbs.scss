@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   height: 42px;
+
   border-bottom: solid 1px var(--color_inner-separator);
 
   &-Link {
@@ -9,14 +10,17 @@
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
+
     &_active {
+      color: var(--color_black);
       font-weight: 500;
-      color: var(--color_black)
     }
   }
+
   &-Separator {
-    color: var(--color_grey-400);
     margin-right: 16px;
     margin-left: 16px;
+
+    color: var(--color_grey-400);
   }
 }
