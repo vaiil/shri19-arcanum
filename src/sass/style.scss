@@ -7,9 +7,14 @@
 @import "base/pattern/one-line";
 
 @import "base/content/link";
+@import "base/content/icon";
 
 @import "content/common/logo";
 @import "content/common/breadcrumbs";
+@import "content/common/repo-select/repo-select";
+@import "content/common/repo-select/repo-selected-value";
+@import "content/common/repo-select/repo-select-options";
+
 
 @import "content/layout/header";
 @import "content/layout/footer";

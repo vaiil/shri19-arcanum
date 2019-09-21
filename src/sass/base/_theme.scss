@@ -9,6 +9,8 @@
 
   --color_blue-300: #1774E9;
 
+  --color_red: #FF4F49;
+
   --space_m: 16px;
   --space_l: 20px;
   --space_xl: 32px;
@@ -16,6 +18,7 @@
   --color_layout-separator: var(--color_grey-50);
   --color_inner-separator: var(--color_grey-100);
   --color_link: var(--color_blue-300);
+  --color_highlighted: var(--color_red);
 
   font-family: sans-serif;
 }

@@ -1,0 +1,11 @@
+.RepoSelectOptions {
+  padding: 14px 22px 18px;
+
+  &-Item {
+    display: block;
+    color: black;
+    & + & {
+      margin-top: 16px;
+    }
+  }
+}

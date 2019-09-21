@@ -1,6 +1,17 @@
 .Header {
   border-bottom: solid 1px var(--color_layout-separator);
+
   &-Inner {
     height: 55px;
+  }
+
+  &-Item {
+    &_overlayBottomLine {
+      margin-bottom: -1px;
+    }
+
+    & + & {
+      padding-left: 40px;
+    }
   }
 }

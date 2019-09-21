@@ -1,0 +1,13 @@
+.RepoSelectedValue {
+  display: flex;
+  border-bottom: solid 3px var(--color_highlighted);
+
+  &-Label {
+    font-weight: 500;
+  }
+
+  &-TextLine {
+    align-self: center;
+  }
+}
+

@@ -5,15 +5,25 @@
 <body class="Page Theme">
 <div class="Header">
     <div class="Header-Inner Container Container_type_centered OneLine">
-        <a class="OneLine-Item OneLine-Item_verticalPosition_center">
+        <a class="OneLine-Item OneLine-Item_verticalPosition_center Header-Item">
             <img src="../assets/logo.svg" alt="Yandex Arcanum"/>
         </a>
-        <div class="OneLine-Item OneLine-Item_verticalPosition_bottom Dropdown">
-            <div class="Dropdown-Visible">
-
+        <div class="OneLine-Item Dropdown RepoSelect Header-Item Header-Item_overlayBottomLine">
+            <div class="RepoSelect-Current">
+                <div class="RepoSelect-Value RepoSelectedValue">
+                    <div class="Dropdown-ActionArea RepoSelectedValue-TextLine">
+                        <span class="RepoSelectedValue-Label">Repository</span>
+                        <span class="RepoSelectedValue-Value">Arc</span>
+                    </div>
+                </div>
+                <div class="RepoSelect-Icon Dropdown-ActionArea">
+                    <div class="Icon Icon_type_check Dropdown-Icon"></div>
+                </div>
             </div>
-            <div class="Dropdown-Hidden">
-
+            <div class="Dropdown-Hidden RepoSelect-Options RepoSelectOptions">
+                <a class="Link RepoSelectOptions-Item" href="#">Arc</a>
+                <a class="Link RepoSelectOptions-Item" href="#">My repository</a>
+                <a class="Link RepoSelectOptions-Item" href="#">Devtools-team repository</a>
             </div>
         </div>
     </div>
@@ -21,13 +31,16 @@
 <div class="Page-Content">
     <div class="Container Container_type_centered">
         <div class="Breadcrumbs">
-          <a class="Breadcrumbs-Link" href="#">
-            arcadia
-          </a>
-          <div class="Breadcrumbs-Separator">/</div>
-          <a class="Breadcrumbs-Link Breadcrumbs-Link_active" href="#">
-            arcadia
-          </a>
+            <a class="Link Breadcrumbs-Link" href="#">
+                arcadia
+            </a>
+            <div class="Breadcrumbs-Separator">/</div>
+            <a class="Link Breadcrumbs-Link Breadcrumbs-Link_active" href="#">
+                arcadia
+            </a>
+        </div>
+        <div>
+
         </div>
     </div>
 </div>
@@ -41,7 +54,7 @@
         </div>
         <div class="Footer-Copyright">
             © 2007—2019
-            <a href="https://yandex.ru" class="Link">Yandex</a>
+            <a href="https://yandex.ru" class="Link Link_colored">Yandex</a>
         </div>
     </div>
 </div>

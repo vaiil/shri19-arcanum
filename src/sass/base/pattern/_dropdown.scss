@@ -1,5 +1,27 @@
 .Dropdown {
+  position: relative;
+
+  &-ActionArea {
+    cursor: pointer;
+  }
+
   &-Hidden {
+    position: absolute;
+    top: 100%;
     display: none;
+  }
+
+  &-Icon {
+    transition: transform 0.3s;
+  }
+
+  &_shown {
+    .Dropdown-Hidden {
+      display: block;
+    }
+
+    .Dropdown-Icon {
+      transform: rotate(180deg);
+    }
   }
 }

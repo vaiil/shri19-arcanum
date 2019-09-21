@@ -1,4 +1,6 @@
 .Link {
-  color: var(--color_link);
   text-decoration: none;
+  &_colored {
+    color: var(--color_link);
+  }
 }

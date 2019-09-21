@@ -1,0 +1,21 @@
+.RepoSelect {
+  &-Current {
+    display: flex;
+    height: 100%;
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &-Icon {
+    align-self: center;
+    margin-left: 6px;
+    font-size: 13px;
+  }
+
+  &-Options {
+    width: 266px;
+    background: white;
+    box-shadow: 0 4px 16px rgba(53, 73, 93, 0.2);
+  }
+}

@@ -10,6 +10,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  },
   module: {
     rules: [
       {
@@ -38,7 +43,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|svg)/,
+        test: /\.(png|jpe?g|svg|ttf|woff)/,
         loader: 'url-loader',
         options: {
           limit: 30000
