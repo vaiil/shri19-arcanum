@@ -1,0 +1,27 @@
+.FileViewerInfoBar {
+  display: flex;
+  align-items: center;
+  padding: 13px 15px 9px;
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px 4px 0 0;
+
+  &-Icon {
+    margin-right: 12px;
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &-File {
+    margin-right: 4px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &-Size {
+    color: #999999;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

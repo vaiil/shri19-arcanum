@@ -1,0 +1,51 @@
+.HistoryCommit {
+  display: flex;
+  min-height: 80px;
+
+  &-IconColumn {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    margin-right: 12px;
+  }
+
+  &-InfoColumn {
+    flex: 5;
+    padding-bottom: 14px;
+  }
+
+  &-HashColumn {
+    flex: 1;
+  }
+
+  &-DiffColumn {
+    //
+  }
+
+
+  &-Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #FF5668;
+    background: #EBF6FD;
+    border-radius: 50%;
+  }
+
+  &-Line {
+    flex: 1;
+    align-self: center;
+    width: 2px;
+    margin: 5px 0;
+    background: #B8BEC3;
+    border-radius: 10px;
+  }
+
+  &-DiffLink {
+    color: #7F8285;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

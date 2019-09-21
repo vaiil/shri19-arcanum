@@ -10,4 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   })
+
+  Array.prototype.forEach.call(document.querySelectorAll('.User'), function (user) {
+    const text = user.innerText
+    if (text) {
+      user.innerHTML = `<span class="User-FirstLetter">${text[0]}</span>${text.slice(1)}`
+    }
+  })
 })

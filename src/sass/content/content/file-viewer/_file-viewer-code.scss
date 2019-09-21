@@ -1,0 +1,23 @@
+.FileViewerCode {
+  padding: 6px;
+  font-family: 'PT Mono', monospace;
+  border: 1px solid #E5E5E5;
+  border-top: 0;
+  counter-reset: item;
+
+
+  &-Line {
+    font-size: 12px;
+    line-height: 20px;
+
+    &:before {
+      display: inline-block;
+      width: 30px;
+      margin-right: 32px;
+      color: #999999;
+      text-align: right;
+      content: counter(item);
+      counter-increment: item;
+    }
+  }
+}

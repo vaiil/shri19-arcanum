@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?poxgns') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?poxgns') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?poxgns##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ttn6mv') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ttn6mv') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ttn6mv##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,29 +26,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Icon_type_check {
+.Icon_type_objects {
   &:before {
-    content: $Icon_type_check;
+    content: $Icon_type_objects; 
   }
 }
-.Icon_type_branch {
+.Icon_type_download {
   &:before {
-    content: $Icon_type_branch;
+    content: $Icon_type_download; 
   }
 }
-.Icon_type_dir {
+.Icon_type_codeBranch {
   &:before {
-    content: $Icon_type_dir;
+    content: $Icon_type_codeBranch; 
   }
 }
-.Icon_type_fileCode {
+.Icon_type_code {
   &:before {
-    content: $Icon_type_fileCode;
+    content: $Icon_type_code; 
+  }
+}
+.Icon_type_folder {
+  &:before {
+    content: $Icon_type_folder; 
+  }
+}
+.Icon_type_angleDown {
+  &:before {
+    content: $Icon_type_angleDown; 
   }
 }
 .Icon_type_fileText {
   &:before {
-    content: $Icon_type_fileText;
+    content: $Icon_type_fileText; 
+  }
+}
+.Icon_type_fileCode {
+  &:before {
+    content: $Icon_type_fileCode; 
   }
 }
 

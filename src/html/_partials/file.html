@@ -1,0 +1,147 @@
+<div class="FileViewer">
+    <div class="FileViewerInfoBar">
+        <div class="FileViewerInfoBar-Icon">
+            <div class="Icon Icon_type_fileCode"></div>
+        </div>
+        <div class="FileViewerInfoBar-File">ya.make</div>
+        <div class="FileViewerInfoBar-Size">(4 347 bytes)</div>
+        <!-- TODO save button-->
+    </div>
+    <div class="FileViewerCode">
+        <!-- TODO colors -->
+        <div class="FileViewerCode-Line">
+            <span class="">#!/usr/bin/env python</span>
+        </div>
+        <div class="FileViewerCode-Line">
+            import os
+        </div>
+        <div class="FileViewerCode-Line">
+            import sys
+        </div>
+        <div class="FileViewerCode-Line">
+            import platform
+        </div>
+        <div class="FileViewerCode-Line">
+            import json
+        </div>
+        <div class="FileViewerCode-Line">
+        </div>
+        <div class="FileViewerCode-Line">
+            URLS = ['https://proxy.sandbox.yandex-team.ru/453818264',
+            'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347']
+        </div>
+        <div class="FileViewerCode-Line">
+            MD5 = '7f5a85f9c28d35c3a76d8cea7af51106'
+        </div>
+        <div class="FileViewerCode-Line">
+        </div>
+        <div class="FileViewerCode-Line">
+            RETRIES = 5
+        </div>
+        <div class="FileViewerCode-Line">
+            HASH_PREFIX = 10
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            HOME_DIR = os.path.expanduser('~')
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            def create_dirs(path):
+        </div>
+        <div class="FileViewerCode-Line">
+            try:
+        </div>
+        <div class="FileViewerCode-Line">
+            os.makedirs(path)
+        </div>
+        <div class="FileViewerCode-Line">
+            except OSError as e:
+        </div>
+        <div class="FileViewerCode-Line">
+            import errno
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            if e.errno != errno.EEXIST:
+        </div>
+        <div class="FileViewerCode-Line">
+            raise
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            return path
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            def misc_root():
+        </div>
+        <div class="FileViewerCode-Line">
+            return create_dirs(os.getenv('YA_CACHE_DIR') or os.path.join(HOME_DIR, '.ya'))
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            def tool_root():
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            def create_dirs(path):
+        </div>
+        <div class="FileViewerCode-Line">
+            try:
+        </div>
+        <div class="FileViewerCode-Line">
+            os.makedirs(path)
+        </div>
+        <div class="FileViewerCode-Line">
+            except OSError as e:
+        </div>
+        <div class="FileViewerCode-Line">
+            import errno
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            if e.errno != errno.EEXIST:
+        </div>
+        <div class="FileViewerCode-Line">
+            raise
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+        <div class="FileViewerCode-Line">
+            return path
+        </div>
+        <div class="FileViewerCode-Line">
+
+        </div>
+    </div>
+</div>

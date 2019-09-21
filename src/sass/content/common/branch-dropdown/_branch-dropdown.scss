@@ -1,0 +1,35 @@
+.BranchDropdown {
+  width: 320px;
+  overflow: hidden;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(53, 73, 93, 0.2);
+
+  &-Current {
+    padding-top: 4px;
+  }
+
+  &-Items {
+    height: auto;
+    max-height: 290px;
+    overflow: auto;
+
+    &:after, &:before {
+      display: block;
+      height: 1px;
+      margin: 4px 12px 6px;
+      background: #E5E5E5;
+      content: '';
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #C1C1C1;
+      border-radius: 10px;
+    }
+
+  }
+}

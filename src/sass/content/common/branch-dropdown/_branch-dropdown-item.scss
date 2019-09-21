@@ -1,0 +1,44 @@
+.BranchDropdownItem {
+  padding: 8px 12px 8px;
+  cursor: pointer;
+
+  &-Name {
+    color: #434445;
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+
+  &-LastCommit {
+    color: #7F8285;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background: #F4F5F6;
+
+    .BranchDropdownItem-Name {
+      color: #000000;
+    }
+
+    .BranchDropdownItem-LastCommit {
+      color: #434445;
+    }
+  }
+
+
+  // Sorry but I need this cascade :(
+  &.BranchDropdownItem_active {
+    padding: 10px 12px 6px;
+    background: #4F4F4F;
+
+    .BranchDropdownItem-Name {
+      color: #F2F2F2;
+    }
+
+    .BranchDropdownItem-LastCommit {
+      color: #E0E0E0;
+    }
+  }
+}

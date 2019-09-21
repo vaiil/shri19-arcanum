@@ -1,0 +1,26 @@
+<html lang="ru">
+<head>
+    <title>Yandex Arcanum</title>
+</head>
+<body class="Page Theme">
+<%= require('html-loader!./_partials/header.html') %>
+<div class="Page-Content">
+    <div class="Container Container_type_centered MainPart">
+        <%= require('html-loader!./_partials/common-info.html') %>
+        <div class="MainPart-Content">
+            <div class="Nav">
+                <div class="Nav-Item">
+                    <a href="#" class="Nav-Link">Details</a>
+                </div>
+                <div class="Nav-Item Nav-Item_active">
+                    <span class="Nav-Link">History</span>
+                </div>
+            </div>
+
+            <%= require('html-loader!./_partials/history.html') %>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./_partials/footer.html') %>
+</body>
+</html>

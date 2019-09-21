@@ -3,13 +3,10 @@
 
   &-Inner {
     height: 55px;
+    margin-bottom: -1px;
   }
 
   &-Item {
-    &_overlayBottomLine {
-      margin-bottom: -1px;
-    }
-
     & + & {
       padding-left: 40px;
     }

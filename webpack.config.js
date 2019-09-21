@@ -18,10 +18,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html/,
-        loader: 'html-loader'
-      },
-      {
         test: /\.scss$/,
         use: [
           'style-loader',
@@ -37,7 +33,7 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env']
-            },
+            }
           },
           'eslint-loader'
         ]
@@ -57,8 +53,33 @@ module.exports = {
       template: 'src/html/index.html'
     }),
 
+    new HtmlWebpackPlugin({
+      filename: 'files.html',
+      template: 'src/html/files.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'file.html',
+      template: 'src/html/file.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'history.html',
+      template: 'src/html/history.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'branch-list.html',
+      template: 'src/html/branch-list.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'commit.html',
+      template: 'src/html/commit.html'
+    }),
+
     new StyleLintPlugin({
       syntax: 'scss'
-    }),
+    })
   ]
 }

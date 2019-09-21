@@ -1,3 +1,6 @@
+@import "../fonts/yandex-sans";
+@import "../fonts/pt-mono";
+
 .Theme {
   --color_black: #000;
   --color_grey-0: #FAFBFC;
@@ -20,5 +23,5 @@
   --color_link: var(--color_blue-300);
   --color_highlighted: var(--color_red);
 
-  font-family: sans-serif;
+  font-family: 'YS Text', sans-serif;
 }

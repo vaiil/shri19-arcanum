@@ -3,60 +3,61 @@
     <title>Yandex Arcanum</title>
 </head>
 <body class="Page Theme">
-<div class="Header">
-    <div class="Header-Inner Container Container_type_centered OneLine">
-        <a class="OneLine-Item OneLine-Item_verticalPosition_center Header-Item">
-            <img src="../assets/logo.svg" alt="Yandex Arcanum"/>
-        </a>
-        <div class="OneLine-Item Dropdown RepoSelect Header-Item Header-Item_overlayBottomLine">
-            <div class="RepoSelect-Current">
-                <div class="RepoSelect-Value RepoSelectedValue">
-                    <div class="Dropdown-ActionArea RepoSelectedValue-TextLine">
-                        <span class="RepoSelectedValue-Label">Repository</span>
-                        <span class="RepoSelectedValue-Value">Arc</span>
+<%= require('html-loader!./_partials/header.html') %>
+<div class="Page-Content">
+    <div class="Container Container_type_centered MainPart">
+        <div class="Heading CommonInfo-Heading">
+            <div class="Heading-Main">
+                Current page:
+            </div>
+            <div class="Dropdown Heading-Branch">
+                <div class="Dropdown-ActionArea BranchDropdownVisible">
+                    <div class="BranchDropdownVisible-Value">
+                        Index
+                    </div>
+                    <div class="BranchDropdownVisible-Icon">
+                        <div class="Dropdown-Icon Icon Icon_type_angleDown"></div>
                     </div>
                 </div>
-                <div class="RepoSelect-Icon Dropdown-ActionArea">
-                    <div class="Icon Icon_type_check Dropdown-Icon"></div>
+                <div class="Dropdown-Hidden BranchDropdown">
+                    <div class="BranchDropdown-Current">
+                        <div class="BranchDropdownItem BranchDropdownItem_active">
+                            <div class="BranchDropdownItem-Name">Index</div>
+                        </div>
+                    </div>
+
+                    <div class="BranchDropdown-Items">
+                        <div class="BranchDropdownItem">
+                            <div class="BranchDropdownItem-Name">
+                                <a class="Link Link_colored" href="files.html">Files</a>
+                            </div>
+                        </div>
+                        <div class="BranchDropdownItem">
+                            <div class="BranchDropdownItem-Name">
+                                <a class="Link Link_colored" href="file.html">View file</a>
+                            </div>
+                        </div>
+                        <div class="BranchDropdownItem">
+                            <div class="BranchDropdownItem-Name">
+                                <a class="Link Link_colored" href="history.html">File history</a>
+                            </div>
+                        </div>
+                        <div class="BranchDropdownItem">
+                            <div class="BranchDropdownItem-Name">
+                                <a class="Link Link_colored" href="branch-list.html">Branch list</a>
+                            </div>
+                        </div>
+                        <div class="BranchDropdownItem">
+                            <div class="BranchDropdownItem-Name">
+                                <a class="Link Link_colored" href="commit.html">Commit</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="Dropdown-Hidden RepoSelect-Options RepoSelectOptions">
-                <a class="Link RepoSelectOptions-Item" href="#">Arc</a>
-                <a class="Link RepoSelectOptions-Item" href="#">My repository</a>
-                <a class="Link RepoSelectOptions-Item" href="#">Devtools-team repository</a>
-            </div>
         </div>
     </div>
 </div>
-<div class="Page-Content">
-    <div class="Container Container_type_centered">
-        <div class="Breadcrumbs">
-            <a class="Link Breadcrumbs-Link" href="#">
-                arcadia
-            </a>
-            <div class="Breadcrumbs-Separator">/</div>
-            <a class="Link Breadcrumbs-Link Breadcrumbs-Link_active" href="#">
-                arcadia
-            </a>
-        </div>
-        <div>
-
-        </div>
-    </div>
-</div>
-<div class="Footer">
-    <div class="Footer-Inner Container Container_type_fluid">
-        <div class="Footer-Text">
-            Trade secrets of Yandex LLC. 16, Lev Tolstoy Str., Moscow, Russia, 119021
-        </div>
-        <div class="Footer-Version">
-            UI: 0.1.15
-        </div>
-        <div class="Footer-Copyright">
-            © 2007—2019
-            <a href="https://yandex.ru" class="Link Link_colored">Yandex</a>
-        </div>
-    </div>
-</div>
+<%= require('html-loader!./_partials/footer.html') %>
 </body>
 </html>

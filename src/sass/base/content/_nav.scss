@@ -1,0 +1,36 @@
+.Nav {
+  display: flex;
+  border-bottom: solid 1px #E5E5E5;
+
+  &-Link {
+    color: #7F8285;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &-Item {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px transparent;
+
+    &_active {
+      border-bottom-color: var(--color_highlighted);
+
+      .Nav-Link {
+        color: black;
+      }
+    }
+
+    & + & {
+      margin-left: 32px;
+    }
+  }
+}
