@@ -10,138 +10,225 @@
     <div class="FileViewerCode">
         <!-- TODO colors -->
         <div class="FileViewerCode-Line">
-            <span class="">#!/usr/bin/env python</span>
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">#!/usr/bin/env python</div>
         </div>
         <div class="FileViewerCode-Line">
-            import os
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                import os
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            import sys
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                import sys
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            import platform
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                import platform
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            import json
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                import json
+            </div>
         </div>
         <div class="FileViewerCode-Line">
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            URLS = ['https://proxy.sandbox.yandex-team.ru/453818264',
-            'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347']
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                URLS = ['https://proxy.sandbox.yandex-team.ru/453818264',
+                'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347']
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            MD5 = '7f5a85f9c28d35c3a76d8cea7af51106'
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                MD5 = '7f5a85f9c28d35c3a76d8cea7af51106'
+            </div>
         </div>
         <div class="FileViewerCode-Line">
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            RETRIES = 5
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                RETRIES = 5
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            HASH_PREFIX = 10
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                HASH_PREFIX = 10
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            HOME_DIR = os.path.expanduser('~')
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                HOME_DIR = os.path.expanduser('~')
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            def create_dirs(path):
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                def create_dirs(path):
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            try:
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                try:
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            os.makedirs(path)
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                os.makedirs(path)
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            except OSError as e:
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                except OSError as e:
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            import errno
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                import errno
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            if e.errno != errno.EEXIST:
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                if e.errno != errno.EEXIST:
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            raise
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                raise
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            return path
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                return path
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            def misc_root():
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                def misc_root():
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            return create_dirs(os.getenv('YA_CACHE_DIR') or os.path.join(HOME_DIR, '.ya'))
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                return create_dirs(os.getenv('YA_CACHE_DIR') or os.path.join(HOME_DIR, '.ya'))
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            def tool_root():
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                def tool_root():
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            def create_dirs(path):
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                def create_dirs(path):
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            try:
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                try:
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            os.makedirs(path)
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                os.makedirs(path)
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            except OSError as e:
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                except OSError as e:
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            import errno
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                import errno
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            if e.errno != errno.EEXIST:
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                if e.errno != errno.EEXIST:
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-            raise
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                raise
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
         <div class="FileViewerCode-Line">
-            return path
+            <div class="FileViewerCode-Counter"></div>
+            <div class="FileViewerCode-LineCode">
+                return path
+            </div>
         </div>
         <div class="FileViewerCode-Line">
-
+            <div class="FileViewerCode-Counter"></div>
         </div>
     </div>
 </div>
