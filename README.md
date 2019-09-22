@@ -11,5 +11,5 @@ npm run start
 Для запуска dev-server-а:
 ```shell script
 npm install
-npm run start-dev
+npm run dev
 ```

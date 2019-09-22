@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prod": "webpack --mode=production",
-    "dev": "webpack --mode=development",
-    "watch": "npm run dev -- --watch",
-    "dev-start": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -47,10 +45,10 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.8.1",
+    "stylelint-config-rational-order": "^0.1.2"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "stylelint-config-rational-order": "^0.1.2"
+    "express": "^4.17.1"
   }
 }
