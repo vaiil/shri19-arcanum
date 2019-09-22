@@ -7,6 +7,12 @@
     }
   }
 
+  &_verticalAlign {
+    &_center {
+      align-items: center;
+    }
+  }
+
   &-Item {
     &_verticalPosition {
       &_top {
@@ -20,6 +26,14 @@
       &_bottom {
         align-self: flex-end;
       }
+    }
+
+    &_indentL {
+      @include space_modifier_values('margin-left', (s m l xl xxl));
+    }
+
+    &_indentR {
+      @include space_modifier_values('margin-right', (s m l xl xxl));
     }
   }
 }

@@ -1,0 +1,57 @@
+@mixin modifier_value($modifierValue, $props, $propValue) {
+  &_#{$modifierValue} {
+    @if type-of($props) == 'list' {
+      @each $prop in $props {
+        #{$prop}: $propValue;
+      }
+    } @else {
+      #{$props}: $propValue;
+    }
+  }
+}
+
+@mixin modifier_values($props, $values) {
+  @if type-of($values) == 'map' {
+    @each $modifierValue, $propValue in $values {
+      @include modifier_value($modifierValue, $props, $propValue);
+    }
+  } @else {
+    @each $modifierValue in $values {
+      @include modifier_value($modifierValue, $props, $modifierValue);
+    }
+  }
+}
+
+@function map-select($map, $keys) {
+  $new_map: ();
+  @each $key in $keys {
+    @if (map-has_key($map, $key)) {
+      $new_map: map-merge($new_map, ($key: map_get($map, $key)));
+    } @else {
+      @debug $key "not found in " $map
+    }
+  }
+  @return $new_map;
+}
+
+@mixin variable_modifier_values($props, $values, $variable) {
+  $map: ();
+  @each $value in $values {
+    $map: map-merge($map, ($value: var(--#{$variable}_#{$value})));
+  }
+  @include modifier_values($props, $map);
+}
+
+@mixin space_modifier_values($props, $sizes) {
+  @include variable_modifier_values($props, $sizes, 'space');
+}
+
+$distributes: (default: initial, between: space-between, center: center, right: flex-end);
+@mixin distribute_modifier_values($modifier_values) {
+  @include modifier_values('justify-content', map-select($distributes, $modifier_values));
+}
+
+$vertical-aligns: (center: center, bottom: flex-end, top: flex-start);
+@mixin vertical-align_modifier_values($modifier_values) {
+  @include modifier_values('align-items', map-select($vertical-aligns, $modifier_values));
+}

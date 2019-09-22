@@ -1,0 +1,42 @@
+.DiffNavBar {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  background: #F1F8FF;
+
+  &-Info {
+    flex: 1;
+    color: #B8BEC3;
+  }
+
+  &-Navigation {
+    flex: 1;
+  }
+
+  &-ScrollButton {
+    margin: 0 15px;
+    font-size: 12px;
+    line-height: 20px;
+
+    &_disabled {
+      color: #B8BEC3;
+    }
+  }
+
+  /** To center align navigation */
+  &:after {
+    flex: 1;
+    content: '';
+  }
+
+  @include breakpointBefore(tablet) {
+    &-Navigation {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}

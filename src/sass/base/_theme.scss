@@ -3,6 +3,7 @@
 
 .Theme {
   --color_black: #000;
+
   --color_grey-0: #FAFBFC;
   --color_grey-50: #F0F2F3;
   --color_grey-100: #E5E5E5;
@@ -14,9 +15,12 @@
 
   --color_red: #FF4F49;
 
+  --space_xs: 6px;
+  --space_s: 8px;
   --space_m: 16px;
   --space_l: 20px;
-  --space_xl: 32px;
+  --space_xl: 24px;
+  --space_xxl: 32px;
 
   --color_layout-separator: var(--color_grey-50);
   --color_inner-separator: var(--color_grey-100);

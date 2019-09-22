@@ -1,0 +1,15 @@
+.IconPlus {
+  &-Icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &_indentR {
+      @include space_modifier_values('margin-right', (xs s));
+    }
+  }
+
+  &-Block {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

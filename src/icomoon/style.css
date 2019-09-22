@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?jvu80h') format('truetype'),
-    url('fonts/icomoon.woff?jvu80h') format('woff'),
-    url('fonts/icomoon.svg?jvu80h#icomoon') format('svg');
+    url('fonts/icomoon.ttf?ivrttc') format('truetype'),
+    url('fonts/icomoon.woff?ivrttc') format('woff'),
+    url('fonts/icomoon.svg?ivrttc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,18 @@
 
 .Icon_type_objects:before {
   content: "\e900";
+}
+.Icon_type_chevronLeft:before {
+  content: "\e90d";
+}
+.Icon_type_externalLink:before {
+  content: "\e90a";
+}
+.Icon_type_sortUp:before {
+  content: "\e90b";
+}
+.Icon_type_sortDown:before {
+  content: "\e90c";
 }
 .Icon_type_chevronRight:before {
   content: "\e908";

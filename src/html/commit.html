@@ -5,8 +5,8 @@
 <div class="Page-Content">
     <div class="Container Container_type_centered MainPart">
         <div class="CommonInfo MainPart-CommonInfo">
-            <div class="CommonInfo-Heading OneLine OneLine_distribute_between">
-                <div class="OneLine-Item">
+            <div class="CommonInfo-Heading CommitDiffHeading">
+                <div class="CommitDiffHeading-Heading">
                     <div class="Heading">
                         <div class="Heading-Main">
                             DEVTOOLS-4599: Add option to add extra whitespace between projects
@@ -14,10 +14,14 @@
                     </div>
                 </div>
 
-                <div class="OneLine-Item">
-                    <button class="Button">
-                        <span class="Icon Icon_type_bars Button-Icon"></span>
-                        <span>Show files at r4318347</span>
+                <div class="CommitDiffHeading-Buttons">
+                    <button class="TextButton IconPlus CommitDiffHeading-BackButton">
+                        <span class="Icon Icon_type_chevronLeft IconPlus-Icon IconPlus-Icon_indentR_xs"></span>
+                        <span class="IconPlus-Block">Back</span>
+                    </button>
+                    <button class="Button IconPlus">
+                        <span class="Icon Icon_type_bars IconPlus-Icon_indentR_xs"></span>
+                        <span class="IconPlus-Block">Show files at r4318347</span>
                     </button>
                 </div>
             </div>
@@ -28,7 +32,7 @@
             </div>
         </div>
         <div class="MainPart-Content">
-
+            <%= require('html-loader!./_partials/commit-diff.html') %>
         </div>
     </div>
 </div>

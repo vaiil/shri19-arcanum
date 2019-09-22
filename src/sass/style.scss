@@ -1,6 +1,7 @@
 @import "lib/hljs";
 
 @import "helpers/breakpoints";
+@import "helpers/modifiers";
 
 @import "base/theme";
 
@@ -9,12 +10,14 @@
 
 @import "base/pattern/dropdown";
 @import "base/pattern/one-line";
+@import "base/pattern/icon-plus";
 
 @import "base/content/link";
 @import "base/content/icon";
 @import "base/content/nav";
 @import "base/content/user";
 @import "base/content/button";
+@import "base/content/text-button";
 
 @import "content/common/logo";
 @import "content/common/breadcrumbs";
@@ -31,16 +34,21 @@
 @import "content/layout/main-part";
 @import "content/layout/common-info";
 
-@import "content/content/grid";
-@import "content/content/grid-line";
+@import "content/common/grid/grid";
+@import "content/common/grid/grid-line";
 
-@import "content/content/file-viewer/file-viewer";
-@import "content/content/file-viewer/file-viewer-info-bar";
-@import "content/content/file-viewer/file-viewer-code";
+@import "content/file-viewer/file-viewer";
+@import "content/file-viewer/file-viewer-info-bar";
+@import "content/file-viewer/file-viewer-code";
 
-@import "content/content/history/history";
-@import "content/content/history/history-group";
-@import "content/content/history/history-commit";
-@import "content/content/history/history-commit-info";
-@import "content/content/history/history-commit-additional";
+@import "content/history/history";
+@import "content/history/history-group";
+@import "content/history/history-commit";
+@import "content/history/history-commit-info";
+@import "content/history/history-commit-additional";
 
+@import "content/diff/diff-info-bar";
+@import "content/diff/diff-nav-bar";
+@import "content/diff/diff-code";
+
+@import "content/commit-diff-heading";

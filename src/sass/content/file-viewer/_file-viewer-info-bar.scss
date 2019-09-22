@@ -22,4 +22,13 @@
     font-size: 13px;
     line-height: 20px;
   }
+
+  &-SaveButton {
+    padding: 8px 12px 6px;
+    color: #000000;
+    font-size: 12px;
+    background: #F5F5F5;
+    border: 1px solid var(--color_grey-200);
+    border-radius: 3px;
+  }
 }

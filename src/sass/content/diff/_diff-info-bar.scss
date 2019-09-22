@@ -1,0 +1,49 @@
+.DiffInfoBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &-FilePath {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-Part {
+    max-width: 100%;
+  }
+
+  &-Type {
+    margin-right: 12px;
+    color: #6B69C7;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &-FileIcon {
+    margin-right: 12px;
+    color: #B8BEC3;
+  }
+
+  &-Added {
+    color: #19BC4D;
+  }
+
+  &-Removed {
+    color: #FF3029;
+  }
+
+  &-External {
+    color: #7F8285;
+  }
+
+  @include breakpointBefore(tablet) {
+    &-Part {
+      flex: 100%;
+
+      & + & {
+        margin-top: 8px;
+      }
+    }
+  }
+}

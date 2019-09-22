@@ -1,0 +1,41 @@
+.DiffCode {
+  counter-reset: old new;
+
+  &-Line {
+    &:before, &:after {
+      order: -1;
+      min-width: 30px;
+      color: #999999;
+      text-align: right;
+      content: '';
+    }
+
+    &:after {
+      margin-right: 32px;
+    }
+
+    &_state {
+      &_added {
+        background: #E6FFED;
+      }
+
+      &_removed {
+        background: #FFEEF0;
+      }
+
+      &_added, &_kept {
+        &:after {
+          content: counter(new);
+          counter-increment: new;
+        }
+      }
+
+      &_removed, &_kept {
+        &:before {
+          content: counter(old);
+          counter-increment: old;
+        }
+      }
+    }
+  }
+}

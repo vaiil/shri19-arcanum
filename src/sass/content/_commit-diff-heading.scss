@@ -1,0 +1,26 @@
+.CommitDiffHeading {
+  display: flex;
+  justify-content: space-between;
+
+  &-BackButton {
+    display: none;
+  }
+
+  @include breakpointBefore(tablet) {
+    flex-direction: column;
+
+    &-Buttons {
+      display: flex;
+      justify-content: space-between;
+      order: -1;
+      margin-bottom: 12px;
+    }
+
+    &-BackButton {
+      display: block;
+      color: #7F8285;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+}

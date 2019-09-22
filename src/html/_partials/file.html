@@ -11,12 +11,213 @@
                 </div>
             </div>
             <div class="OneLine-Item">
-                <button class="">
+                <button class="FileViewerInfoBar-SaveButton">
                     <span class="Icon Icon_type_download"></span>
                 </button>
             </div>
         </div>
-        <!-- TODO save button-->
     </div>
-    <div class="FileViewerCode"></div>
+    <div class="FileViewer-MainWindow">
+        <div class="FileViewerCode">
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-comment">#!/usr/bin/env python</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> os</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> sys</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> platform</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> json</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">URLS = [<span class="hljs-string">'https://proxy.sandbox.yandex-team.ru/453818264'</span>, <span
+                        class="hljs-string">'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347'</span>]</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">MD5 = <span
+                        class="hljs-string">'7f5a85f9c28d35c3a76d8cea7af51106'</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">RETRIES = <span class="hljs-number">5</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">HASH_PREFIX = <span class="hljs-number">10</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">HOME_DIR = os.path.expanduser(<span
+                        class="hljs-string">'~'</span>)</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-function"><span
+                        class="hljs-keyword">def</span> <span class="hljs-title">create_dirs</span><span
+                        class="hljs-params">(path)</span>:</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">try</span>:</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">        os.makedirs(path)</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">except</span> OSError <span
+                        class="hljs-keyword">as</span> e:</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">        <span class="hljs-keyword">import</span> errno</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">        <span class="hljs-keyword">if</span> e.errno != errno.EEXIST:</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">            <span class="hljs-keyword">raise</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">return</span> path</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-function"><span
+                        class="hljs-keyword">def</span> <span class="hljs-title">misc_root</span><span
+                        class="hljs-params">()</span>:</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">return</span> create_dirs(os.getenv(<span
+                        class="hljs-string">'YA_CACHE_DIR'</span>) <span class="hljs-keyword">or</span> os.path.join(HOME_DIR, <span
+                        class="hljs-string">'.ya'</span>))</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-function"><span
+                        class="hljs-keyword">def</span> <span class="hljs-title">tool_root</span><span
+                        class="hljs-params">()</span>:</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"><span class="hljs-function"><span
+                        class="hljs-keyword">def</span> <span class="hljs-title">create_dirs</span><span
+                        class="hljs-params">(path)</span>:</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">try</span>:</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">        os.makedirs(path)</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">except</span> OSError <span
+                        class="hljs-keyword">as</span> e:</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">        <span class="hljs-keyword">import</span> errno</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">        <span class="hljs-keyword">if</span> e.errno != errno.EEXIST:</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">            <span class="hljs-keyword">raise</span></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">return</span> path</pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line">
+                <div class="FileViewerCode-Counter"></div>
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+        </div>
+    </div>
 </div>

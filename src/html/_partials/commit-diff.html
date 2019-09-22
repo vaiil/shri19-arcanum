@@ -1,0 +1,156 @@
+<div class="FileViewer">
+    <div class="FileViewerInfoBar DiffInfoBar">
+        <div class="DiffInfoBar-Part">
+            <div class="OneLine OneLine_verticalAlign_center">
+                <div class="DiffInfoBar-Type">M</div>
+                <div class="DiffInfoBar-FileIcon">
+                    <div class="Icon Icon_type_fileCode"></div>
+                </div>
+                <div class="FileViewerInfoBar-File DiffInfoBar-FilePath">
+                    /trunk/arcadia/devtools/intellij/src/main/java/ru/yandex/devtools/intellij/arc/client/ArcCli.java
+                </div>
+            </div>
+        </div>
+        <div class="DiffInfoBar-Part">
+            <div class="OneLine OneLine_verticalAlign_center">
+                <div class="DiffInfoBar-Added OneLine-Item">+100</div>
+                <div class="DiffInfoBar-Removed OneLine-Item_indentL_l">-81</div>
+                <button class="DiffInfoBar-External TextButton OneLine-Item_indentL_xl">
+                    <span class="Icon Icon_type_externalLink"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="FileViewer-MainWindow">
+        <div class="DiffNavBar">
+            <div class="DiffNavBar-Info">
+                @@ -270, 160 +270, 161 @@
+            </div>
+            <div class="DiffNavBar-Navigation">
+                <button class="TextButton DiffNavBar-ScrollButton  DiffNavBar-ScrollButton_disabled IconPlus">
+                    <span class="Icon Icon_type_sortDown IconPlus-Icon IconPlus-Icon_indentR_s"></span><span
+                        class="IconPlus-Block">Below 20 lines</span>
+                </button>
+                <button class="TextButton DiffNavBar-ScrollButton">
+                    <span class="Icon Icon_type_sortUp IconPlus-Icon IconPlus-Icon_indentR_s"></span><span
+                        class="IconPlus-Block">Above 20 lines</span>
+                </button>
+            </div>
+        </div>
+        <div class="FileViewerCode DiffCode">
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">package</span> ru.yandex.devtools.intellij.arc.client;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> java.util.ArrayList;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span
+                        class="hljs-keyword">import</span> java.util.Collection;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> java.util.List;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> com.intellij.openapi.diagnostic.Logger;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> com.intellij.openapi.project.Project;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> com.intellij.openapi.vcs.FilePath;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> com.intellij.openapi.vcs.VcsException;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> com.intellij.openapi.vfs.VirtualFile;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> com.intellij.vcsUtil.VcsUtil;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> org.jetbrains.annotations.NotNull;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> ru.yandex.devtools.intellij.arc.ArcContext;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> ru.yandex.devtools.intellij.arc.ArcRevisionNumber;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> ru.yandex.devtools.intellij.arc.ArcStatus;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> ru.yandex.devtools.intellij.arc.ui.ArcResetDialog;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_removed">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> java.util.ArrayList;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_removed">
+                <pre class="FileViewerCode-LineCode"><span
+                        class="hljs-keyword">import</span> java.util.Collection;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_removed">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-keyword">import</span> java.util.List;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_removed">
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_added">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-comment">/**</span></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"> * @author Dmitry Andreev &lt;a href="mailto:AndreevDm@yandex-team.ru"&gt;&lt;/a&gt;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"> * <span class="hljs-meta">@date</span> <span class="hljs-number">11</span>/<span
+                        class="hljs-number">10</span>/<span class="hljs-number">2018</span></pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode">*/</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"><span class="hljs-function"><span
+                        class="hljs-keyword">public</span> <span class="hljs-title">ArcCli</span><span
+                        class="hljs-params">(String arcBinaryPath)</span> </span>{</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode">    <span class="hljs-keyword">this</span>.arcBinaryPath = arcBinaryPath;</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode">}</pre>
+            </div>
+            <div class="FileViewerCode-Line DiffCode-Line DiffCode-Line_state_kept">
+                <pre class="FileViewerCode-LineCode"></pre>
+            </div>
+        </div>
+        <div class="DiffNavBar">
+            <div class="DiffNavBar-Info">
+                @@ -270, 160 +270, 161 @@
+            </div>
+            <div class="DiffNavBar-Navigation">
+                <button class="TextButton DiffNavBar-ScrollButton  DiffNavBar-ScrollButton_disabled IconPlus">
+                    <span class="Icon Icon_type_sortDown IconPlus-Icon IconPlus-Icon_indentR_s"></span><span
+                        class="IconPlus-Block">Below 20 lines</span>
+                </button>
+                <button class="TextButton DiffNavBar-ScrollButton">
+                    <span class="Icon Icon_type_sortUp IconPlus-Icon IconPlus-Icon_indentR_s"></span><span
+                        class="IconPlus-Block">Above 20 lines</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

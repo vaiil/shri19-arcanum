@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?jvu80h') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?jvu80h') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?jvu80h##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ivrttc') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ivrttc') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ivrttc##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,6 +29,26 @@
 .Icon_type_objects {
   &:before {
     content: $Icon_type_objects; 
+  }
+}
+.Icon_type_chevronLeft {
+  &:before {
+    content: $Icon_type_chevronLeft; 
+  }
+}
+.Icon_type_externalLink {
+  &:before {
+    content: $Icon_type_externalLink; 
+  }
+}
+.Icon_type_sortUp {
+  &:before {
+    content: $Icon_type_sortUp; 
+  }
+}
+.Icon_type_sortDown {
+  &:before {
+    content: $Icon_type_sortDown; 
   }
 }
 .Icon_type_chevronRight {
