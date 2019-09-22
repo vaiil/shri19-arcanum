@@ -1,4 +1,8 @@
 import '../sass/style.scss'
+import wrapCode from './code'
+import exampleCode from '@/assets/example-code.txt'
+
+wrapCode('.FileViewerCode', exampleCode)
 
 document.addEventListener('DOMContentLoaded', () => {
   let openedDropdown = null

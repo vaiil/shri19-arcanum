@@ -14,6 +14,9 @@
 
   &-LineCode {
     flex: 1;
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
     word-break: break-all;
   }
 
