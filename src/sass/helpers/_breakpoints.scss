@@ -1,0 +1,46 @@
+$screens: (full: 1440, medium: 1024, tablet: 768, mobile: 0);
+
+$screen_keys: map_keys($screens);
+
+@mixin breakpointOnly($screen) {
+  $i: index($screen_keys, $screen);
+  $width: map-get($screens, $screen);
+  @if ($i == 1) {
+    @media (min-width: $width + 'px') {
+      @content;
+    }
+  } @else {
+    $prev: nth($screen_keys, ($i - 1));
+    $prev_width: map_get($screens, $prev) - 1;
+    @if ($width == 0) {
+      @media (max-width: $prev_width + 'px') {
+        @content;
+      }
+    } @else {
+      @media (min-width: $width + 'px') and (max-width: $prev_width + 'px') {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin breakpointBefore($screen) {
+  $width: map-get($screens, $screen);
+  @if ($width != 0) {
+    $w: $width - 1;
+    @media (max-width: $w + 'px') {
+      @content;
+    }
+  }
+}
+
+@mixin breakpointAfter($screen) {
+  $width: map-get($screens, $screen);
+  @if ($width != 0) {
+    @media (min-width: $width + 'px') {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

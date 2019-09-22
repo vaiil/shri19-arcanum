@@ -6,7 +6,7 @@
   box-shadow: 0 4px 16px rgba(53, 73, 93, 0.2);
 
   &-Current {
-    padding-top: 4px;
+    margin-top: 4px;
   }
 
   &-Items {
@@ -30,6 +30,10 @@
       background: #C1C1C1;
       border-radius: 10px;
     }
+  }
 
+  @include breakpointBefore(tablet) {
+    width: auto;
+    border-radius: 10px 10px 0 0;
   }
 }

@@ -11,7 +11,7 @@
       margin-left: auto;
       --container_hspace: var(--space_xl);
 
-      @media screen and (max-width: 767px) {
+      @include breakpointBefore(tablet) {
         --container_hspace: var(--space_m);
       }
     }

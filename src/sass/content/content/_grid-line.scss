@@ -9,38 +9,125 @@
     font-size: 12px;
   }
 
-  &-Cell {
-    padding-top: 16px;
-    padding-bottom: 12px;
-  }
-
-
   &_type_heading {
     color: #B8BEC3;
+
     .GridLine-Cell {
       padding-bottom: 8px;
     }
   }
 
-  &_hspace {
-    .GridLine-Cell {
-      padding-right: 8px;
-      padding-left: 8px;
+
+  @include breakpointAfter(tablet) {
+    &-Cell {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+
+    &-CellWrapper {
+      display: contents;
+    }
+
+    &_hspace {
+      .GridLine-Cell {
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+    }
+
+    &_border {
+      &_light {
+        .GridLine-Cell {
+          border-bottom: #F2F2F2 solid 1px;
+        }
+      }
+
+      &_dark {
+        .GridLine-Cell {
+          border-bottom: #E5E5E5 solid 1px;
+        }
+      }
+    }
+
+    &-MobileActionWrapper {
+      display: none;
     }
   }
 
 
-  &_border {
-    &_light {
-      .GridLine-Cell {
-        border-bottom: #F2F2F2 solid 1px;
+  @include breakpointBefore(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+
+    &-CellWrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-Cell {
+      &_type {
+        &_name {
+          margin-bottom: 10px;
+        }
+
+        &_message {
+          margin-bottom: 9px;
+        }
+
+        &_commit {
+          order: 1;
+          margin-right: 8px;
+        }
+
+        &_committer {
+          order: 2;
+          margin-right: 2px;
+
+          &:before {
+            content: 'by ';
+          }
+
+          &:after {
+            content: ', ';
+          }
+        }
+
+        &_date {
+          order: 3;
+        }
+      }
+
+      &_mobile {
+        &_full {
+          flex-basis: 100%;
+        }
       }
     }
 
-    &_dark {
-      .GridLine-Cell {
+    &-MobileAction {
+      display: inline-block;
+      padding: 3px;
+      color: #E5E5E5;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &_type_heading {
+      display: none;
+    }
+
+    &_border {
+      &_light {
+        border-bottom: #F2F2F2 solid 1px;
+
+      }
+
+      &_dark {
         border-bottom: #E5E5E5 solid 1px;
       }
     }
   }
 }
+

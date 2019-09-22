@@ -1,16 +1,18 @@
 .Grid {
-  display: table;
-  width: 100%;
+  @include breakpointAfter(tablet) {
+    display: table;
+    width: 100%;
 
-  &-Line {
-    display: table-row;
-  }
+    &-Line {
+      display: table-row;
+    }
 
-  &-Cell {
-    display: table-cell;
+    &-Cell {
+      display: table-cell;
 
-    &:last-child {
-      text-align: right;
+      &:last-child {
+        text-align: right;
+      }
     }
   }
 }

@@ -15,4 +15,8 @@
   &-Version {
     margin-right: var(--space_xl);
   }
+
+  @include breakpointBefore(medium) {
+    display: none;
+  }
 }

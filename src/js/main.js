@@ -1,12 +1,24 @@
 import '../sass/style.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
+  let openedDropdown = null
   document.body.addEventListener('click', e => {
-    const dropdownActionArea = e.target.closest('.Dropdown-ActionArea')
-    if (dropdownActionArea) {
-      const dropdown = dropdownActionArea.closest('.Dropdown')
-      if (dropdown) {
-        dropdown.classList.toggle('Dropdown_shown')
+    if (openedDropdown) {
+      if (e.target.closest('.Dropdown-Hidden') !== openedDropdown) {
+        const dropdown = openedDropdown.closest('.Dropdown')
+        if (dropdown) {
+          dropdown.classList.remove('Dropdown_shown')
+          openedDropdown = null
+        }
+      }
+    } else {
+      const dropdownActionArea = e.target.closest('.Dropdown-ActionArea')
+      if (dropdownActionArea) {
+        const dropdown = dropdownActionArea.closest('.Dropdown')
+        if (dropdown) {
+          dropdown.classList.add('Dropdown_shown')
+          openedDropdown = dropdown.querySelector('.Dropdown-Hidden')
+        }
       }
     }
   })

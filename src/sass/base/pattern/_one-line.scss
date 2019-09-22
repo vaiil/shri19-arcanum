@@ -1,6 +1,12 @@
 .OneLine {
   display: flex;
 
+  &_distribute {
+    &_between {
+      justify-content: space-between;
+    }
+  }
+
   &-Item {
     &_verticalPosition {
       &_top {
