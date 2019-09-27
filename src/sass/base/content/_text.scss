@@ -1,0 +1,36 @@
+.Text {
+  /* Default */
+  color: var(--color_primary);
+  font-size: var(--text-size_m);
+  line-height: var(--text-line-height_m);
+
+  &_size {
+    @include variable_modifier_values('font-size', (xs s m l), 'text-size');
+  }
+
+  &_height {
+    @include variable_modifier_values('line-height', (xs s m l), 'text-line-height');
+  }
+
+  &_weight {
+    &_bold {
+      font-weight: 700;
+    }
+
+    &_semiBold {
+      font-weight: 600;
+    }
+
+    &_medium {
+      font-weight: 500;
+    }
+
+    &_regular {
+      font-weight: 400;
+    }
+  }
+
+  &_view {
+    @include variable_modifier_values('color', (primary), 'color');
+  }
+}

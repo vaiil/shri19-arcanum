@@ -22,10 +22,23 @@
   --space_xl: 24px;
   --space_xxl: 32px;
 
+  --color_primary: var(--color_black);
   --color_layout-separator: var(--color_grey-50);
   --color_inner-separator: var(--color_grey-100);
   --color_link: var(--color_blue-300);
   --color_highlighted: var(--color_red);
+
+
+  --text-size_xs: 12px;
+  --text-size_s: 13px;
+  --text-size_m: 14px;
+  --text-size_l: 16px;
+
+  /* Межстрочный интервал */
+  --text-line-height_xs: 1.2em;
+  --text-line-height_s: 1.3em;
+  --text-line-height_m: 1.4em;
+  --text-line-height_l: 1.6em;
 
   font-family: 'YS Text', sans-serif;
 }
