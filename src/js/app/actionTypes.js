@@ -1,0 +1,3 @@
+export const SET_FILE_SEARCH_FIELD = 'SET_FILE_SEARCH_FIELD'
+
+export const LOAD_FILES = 'LOAD_FILES'
