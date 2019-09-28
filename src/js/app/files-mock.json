@@ -1,0 +1,58 @@
+[
+  {
+    "type": "dir",
+    "name": "api",
+    "commit": "d53dsv",
+    "commitMessage": "[vcs] move http to arc",
+    "committer": "noxoomo",
+    "updated": 1569687295770
+  },
+  {
+    "type": "dir",
+    "name": "idm",
+    "commit": "r2899268",
+    "commitMessage": "[vcs] test for empty commit message",
+    "committer": "nikitxskv",
+    "updated": 1569687395770
+  },
+  {
+    "type": "dir",
+    "name": "samogon",
+    "commit": "r3012807",
+    "commitMessage": "[vcs] change owner to g:arc",
+    "committer": "nalpp",
+    "updated": 1568687295770
+  },
+  {
+    "type": "dir",
+    "name": "server",
+    "commit": "r3248802",
+    "commitMessage": "[vcs] move http to arc",
+    "committer": "somov",
+    "updated": 1559687295770
+  },
+  {
+    "type": "dir",
+    "name": "yardman",
+    "commit": "r2090562",
+    "commitMessage": "ARCADIA-771: append /trunk/arcadia/",
+    "committer": "deshevoy",
+    "updated": 1559387295770
+  },
+  {
+    "type": "code",
+    "name": "README.md",
+    "commit": "r2168860",
+    "commitMessage": "ARCADIA-771: detect binary files",
+    "committer": "exprmntr",
+    "updated": 1559307295770
+  },
+  {
+    "type": "code",
+    "name": "ya.make",
+    "commit": "r2778241",
+    "commitMessage": "VCS-803: packages for services",
+    "committer": "levanov",
+    "updated": 1559307295770
+  }
+]

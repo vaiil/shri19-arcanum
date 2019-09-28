@@ -1,8 +1,22 @@
 import '../sass/style.scss'
-// import Store from './lib/custom-redux/Store'
-// import FileSearchField from '@/js/app/views/FileSearchField'
+import store from '@/js/app/store'
+import FileSearchField from '@/js/app/views/FileSearchField'
+import Files from '@/js/app/views/Files'
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-component]').forEach(el => {
+    switch (el.dataset.component) {
+      case 'file-search-field':
+        // eslint-disable-next-line no-new
+        new FileSearchField(el, store)
+        break
+      case 'files':
+        // eslint-disable-next-line no-new
+        new Files(el, store)
+        break
+    }
+  })
+
   let openedDropdown = null
   document.body.addEventListener('click', e => {
     if (openedDropdown) {

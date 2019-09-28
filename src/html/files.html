@@ -6,15 +6,17 @@
     <div class="Container Container_type_centered MainPart">
         <%= require('html-loader!./_partials/common-info.html') %>
         <div class="MainPart-Content">
-            <div class="Nav">
-                <div class="Nav-Item  Nav-Item_active">
-                    <span class="Nav-Link">Files</span>
+            <div class="NavBar">
+                <div class="Nav NavBar-MainNavigation">
+                    <div class="Nav-Item  Nav-Item_active">
+                        <span class="Nav-Link">Files</span>
+                    </div>
+                    <div class="Nav-Item">
+                        <a href="/branch-list.html" class="Nav-Link">Branches</a>
+                    </div>
                 </div>
-                <div class="Nav-Item">
-                    <a href="/branch-list.html" class="Nav-Link">Branches</a>
-                </div>
+                <div data-component="file-search-field" class="FileSearchField NavBar-Search"></div>
             </div>
-
             <%= require('html-loader!./_partials/files.html') %>
         </div>
     </div>

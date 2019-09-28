@@ -1,4 +1,4 @@
-import {SET_FILE_SEARCH_FIELD, LOAD_FILES} from './actionTypes'
+import { SET_FILE_SEARCH_FIELD, LOAD_FILES } from './actionTypes'
 import _ from 'lodash'
 
 /**
@@ -16,10 +16,8 @@ import _ from 'lodash'
 export default function (state, action) {
   switch (action.type) {
     case SET_FILE_SEARCH_FIELD:
-      const fileSearchField = action.payload
-      return {...state, fileSearchField}
+      return { ...state, fileSearchField: action.payload }
     case LOAD_FILES:
-      const files = _.cloneDeep(action.payload)
-      return {...state, files}
+      return { ...state, files: _.cloneDeep(action.payload) }
   }
 }

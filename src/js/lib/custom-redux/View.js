@@ -4,9 +4,10 @@ export default class View {
     this._store = store
     this._unsubscribe = store.subscribe(
       () => {
-        this.render(store)
+        this.render(store.getState())
       }
     )
+    this.render(store.getState())
   }
 
   destroy () {

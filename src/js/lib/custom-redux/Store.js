@@ -1,17 +1,17 @@
 export default class Store {
-  constructor(reducer, initialState, middlewares) {
-    //TODO implement middlewares
+  constructor (reducer, initialState, middlewares) {
+    // TODO implement middlewares
 
     this._state = initialState
     this._reducer = reducer
     this._listeners = []
   }
 
-  getState() {
+  getState () {
     return this._state
   }
 
-  subscribe(listener) {
+  subscribe (listener) {
     this._listeners.push(listener)
     let isSubscribed = true
     // return unsubscribe function
@@ -26,7 +26,7 @@ export default class Store {
     }
   }
 
-  dispatch(action) {
+  dispatch (action) {
     this._state = this._reducer(this._state, action)
 
     this._listeners.forEach(listener => {

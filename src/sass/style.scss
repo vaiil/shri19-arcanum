@@ -19,6 +19,7 @@
 @import "base/content/button";
 @import "base/content/text-button";
 
+@import "content/common/nav-bar";
 @import "content/common/logo";
 @import "content/common/breadcrumbs";
 @import "content/common/repo-select/repo-select";
@@ -28,15 +29,15 @@
 @import "content/common/branch-dropdown/branch-dropdown";
 @import "content/common/branch-dropdown/branch-dropdown-visible";
 @import "content/common/branch-dropdown/branch-dropdown-item";
+@import "content/common/grid/grid";
+@import "content/common/grid/grid-line";
 
 @import "content/layout/header";
 @import "content/layout/footer";
 @import "content/layout/main-part";
 @import "content/layout/common-info";
 
-@import "content/common/grid/grid";
-@import "content/common/grid/grid-line";
-
+@import "content/files/file-search-field";
 @import "content/file-viewer/file-viewer";
 @import "content/file-viewer/file-viewer-info-bar";
 @import "content/file-viewer/file-viewer-code";
