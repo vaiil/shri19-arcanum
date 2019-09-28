@@ -1,8 +1,6 @@
 import '../sass/style.scss'
-// import wrapCode from './code'
-// import exampleCode from '@/assets/example-code.txt'
-
-// wrapCode('.FileViewerCode', exampleCode)
+// import Store from './lib/custom-redux/Store'
+// import FileSearchField from '@/js/app/views/FileSearchField'
 
 document.addEventListener('DOMContentLoaded', () => {
   let openedDropdown = null
