@@ -17,11 +17,15 @@
     }
   }
 
-
   @include breakpointAfter(tablet) {
     &-Cell {
       padding-top: 16px;
       padding-bottom: 12px;
+      &_type {
+        &_name {
+          cursor: pointer;
+        }
+      }
     }
 
     &-CellWrapper {
@@ -70,6 +74,7 @@
       &_type {
         &_name {
           margin-bottom: 10px;
+          cursor: pointer;
         }
 
         &_message {
@@ -129,5 +134,6 @@
       }
     }
   }
+
 }
 

@@ -1,0 +1,12 @@
+.NavBar {
+  display: flex;
+  border-bottom: solid 1px #E5E5E5;
+
+  &-MainNavigation {
+    flex: 1;
+  }
+
+  &-Search {
+    padding: 5px 0;
+  }
+}

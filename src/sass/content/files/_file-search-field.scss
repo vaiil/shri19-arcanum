@@ -1,0 +1,19 @@
+.FileSearchField {
+  position: relative;
+
+  &-Input {
+    padding: 5px 8px;
+    color: #979797;
+    font-size: 13px;
+    line-height: 15px;
+    border: solid 2px #D9D9D9;
+    border-radius: 4px;
+    &:focus {
+      border-color: #B8BEC3;
+      outline: none;
+    }
+    &::placeholder {
+      color: #B8BEC3;
+    }
+  }
+}
