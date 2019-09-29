@@ -1,5 +1,6 @@
 import View from '@/js/lib/custom-redux/View'
 import moment from 'moment'
+import fetchFilesRequest from '../actions/fetch-files-request'
 
 const typesToIcons = {
   dir: 'folder',
@@ -97,5 +98,14 @@ export default class Files extends View {
         .filter(filterFunction)
         .map(getGridLine)
         .join('')
+
+    if (!this._rendered) {
+      this._el.addEventListener('click', e => {
+        if (e.target.closest('.GridLine-Cell_type_name')) {
+          this._store.dispatch(fetchFilesRequest(''))
+        }
+      })
+      this._rendered = true
+    }
   }
 }

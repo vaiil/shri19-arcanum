@@ -1,7 +1,5 @@
 export default class Store {
-  constructor (reducer, initialState, middlewares) {
-    // TODO implement middlewares
-
+  constructor (reducer, initialState) {
     this._state = initialState
     this._reducer = reducer
     this._listeners = []
@@ -27,6 +25,7 @@ export default class Store {
   }
 
   dispatch (action) {
+    console.log(this)
     this._state = this._reducer(this._state, action)
 
     this._listeners.forEach(listener => {

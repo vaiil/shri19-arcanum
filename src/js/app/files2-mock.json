@@ -1,0 +1,34 @@
+[
+  {
+    "type": "dir",
+    "name": "cli",
+    "commit": "d53dsv",
+    "commitMessage": "[vcs] add command",
+    "committer": "noxoomo",
+    "updated": 1563687295770
+  },
+  {
+    "type": "dir",
+    "name": "http",
+    "commit": "vail",
+    "commitMessage": "[vcs] add contoller",
+    "committer": "nikitxskv",
+    "updated": 156968739770
+  },
+  {
+    "type": "text",
+    "name": ".gitignore",
+    "commit": "ar216880",
+    "commitMessage": "ARCADIA-771: ignore smth",
+    "committer": "exprmntr",
+    "updated": 1559407295770
+  },
+  {
+    "type": "code",
+    "name": "bf.bf",
+    "commit": "r2778241",
+    "commitMessage": "VCS-803: a file",
+    "committer": "lev",
+    "updated": 1559707295770
+  }
+]
